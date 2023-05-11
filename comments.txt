@@ -1,0 +1,7 @@
+ "content_scripts": [
+   {
+     "js": ["scripts/content.js"],
+     "css": ["scripts/contentStyles.css"],
+     "matches": ["https://chat.openai.com/"]
+   }
+ ],
