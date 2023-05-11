@@ -5,8 +5,6 @@ chrome.storage.local.get(["isHistoryVisible"], (res) => {
   // const navContainer = document.querySelector("#__next > div > div");
   const isVisible = res?.isHistoryVisible ?? true;
 
-  console.log(isVisible, "visible from popupjs ");
-
   if (isVisible) {
     statusElement.textContent = "Visible";
     // navContainer.style.display = "block";
@@ -56,16 +54,13 @@ document.getElementById("toggle-history").addEventListener("click", () => {
         });
 
         // const title = document.querySelector("head");
-        console.log(navContainer);
       }
 
-      chrome.scripting
-        .executeScript({
-          target: { tabId: tab.id },
-          func: printTitle,
-          //        files: ['contentScript.js'],  // To call external file instead
-        })
-        .then(() => console.log("Injected a function!"));
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        func: printTitle,
+        //        files: ['contentScript.js'],  // To call external file instead
+      });
     }
   );
 });

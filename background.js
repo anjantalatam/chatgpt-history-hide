@@ -2,6 +2,7 @@
 //   console.log(changes, area, "background");
 // });
 
+// TODO: make toggle based on extension icon click
 chrome.action.onClicked.addListener((tab) => {
-  console.log("clicked icon");
+  // console.log("clicked icon");
 });

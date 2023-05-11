@@ -15,10 +15,7 @@
 // init();
 const navContainer = document.querySelector("#__next > div > div");
 chrome.storage.local.get(["isHistoryVisible"], (res) => {
-  console.log(" i am executed");
   const isVisible = res?.isHistoryVisible ?? true;
-
-  console.log(res?.isHistoryVisible, isVisible, "visible from content js");
 
   if (isVisible) {
     navContainer.style.display = "block";
