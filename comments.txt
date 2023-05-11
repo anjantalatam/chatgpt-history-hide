@@ -2,6 +2,6 @@
    {
      "js": ["scripts/content.js"],
      "css": ["scripts/contentStyles.css"],
-     "matches": ["https://chat.openai.com/"]
+     "matches": ["https://chat.openai.com/*"]
    }
  ],

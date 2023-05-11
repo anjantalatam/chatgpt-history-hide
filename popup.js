@@ -28,7 +28,7 @@ chrome.storage.onChanged.addListener((changes, area) => {
 
 document.getElementById("toggle-history").addEventListener("click", () => {
   chrome.tabs.query(
-    { active: true, currentWindow: true, url: "https://chat.openai.com/" },
+    { active: true, currentWindow: true, url: "https://chat.openai.com/*" },
     (tabs) => {
       const tab = tabs[0];
 
