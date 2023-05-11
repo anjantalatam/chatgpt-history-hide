@@ -8,6 +8,14 @@
 
 1. Toggle Chat GPT history visibility with a button ( Toggle ) from popup
 
+  <details>
+  <summary>v1: Demo</summary>
+
+https://github.com/anjantalatam/chatgpt-history-hide/assets/53368431/b69fa394-708e-438f-ae85-f397ebfbf855
+
+
+  <details/>
+
 ### In Progress 🚧
 
 1. Popup CSS
