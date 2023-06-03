@@ -6,10 +6,10 @@ chrome.storage.local.get(["isHistoryVisible"], (res) => {
   const isVisible = res?.isHistoryVisible ?? true;
 
   if (isVisible) {
-    statusElement.textContent = "Visible";
+    statusElement.textContent = "Visible 👀";
     // navContainer.style.display = "block";
   } else {
-    statusElement.textContent = "Hidden";
+    statusElement.textContent = "Hidden 🙈";
     // navContainer.style.display = "none";
   }
 });
@@ -19,9 +19,9 @@ chrome.storage.onChanged.addListener((changes, area) => {
     const isVisible = changes?.isHistoryVisible?.newValue ?? true;
 
     if (isVisible) {
-      statusElement.textContent = "Visible";
+      statusElement.textContent = "Visible 👀";
     } else {
-      statusElement.textContent = "Hidden";
+      statusElement.textContent = "Hidden 🙈";
     }
   }
 });

@@ -3,13 +3,6 @@
   "name": "ChatGPT History Hide",
   "version": "1.0",
   "description": "Hide Side nav of ChatGPT for privacy",
-  "icons": {
-    "16": "images/icon-16.png",
-    "32": "images/icon-32.png",
-    "48": "images/icon-48.png",
-    "128": "images/icon-128.png"
-  },
-
   "action": {
     "default_popup": "popup.html",
     "default_title": "ChatGPT History Hide"
